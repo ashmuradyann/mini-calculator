@@ -17,10 +17,9 @@
         
         img {
             width: 100%;
+            opacity: 1;
             animation-name: fade;
             animation-duration: .7s;
-            transition: .5s;
-            opacity: 1;
             // position: relative;
             // animation: 3s ease 0s normal forwards 1 fade;
         }
@@ -30,8 +29,11 @@
             margin: 10px 0;
             display: flex;
             justify-content: flex-start;
-            align-items: center;
             color: rgb(90, 90, 90);
+
+            &.input-area {
+                // align-items: center;
+            }
             
             .input-count {
                 outline: none;
@@ -43,7 +45,8 @@
                 border-right: none;
                 border-bottom: 3px solid #fff;
                 transition: .2s;
-                width: 100px;
+                width: 7.2rem;
+                margin-top: 5px;
             }
             
             .input-count:focus {
@@ -53,19 +56,14 @@
             h3 {
                 font-size: 1.6rem;
                 font-weight: 500;
+                color: #000;
             }
             
-            p {
+            .count-p {
                 font-size: 2rem;
                 font-weight: 400;
-                margin: 0 0 7px 0;
+                margin: 10px 10px 10px 0;
             }
-        }
-
-        p {
-            font-size: 1.5rem;
-            font-weight: 400;
-            margin: 10px 0;
         }
 
         .button {
@@ -121,7 +119,7 @@
                 transform: translate(-50%, -50%);
                 transition: .2s;
 
-                p {
+                .button-p {
                     font-size: 1.4rem;
                 }
             }
@@ -135,14 +133,12 @@
 
 @keyframes fade {
     0% {
+        transform: translateY(20%);
         opacity: 0;
     }
-
-    50% {
-        opacity: .5;
-    }
-
+    
     100% {
+        transform: translateY(0%);
         opacity: 1;
     }
 }
