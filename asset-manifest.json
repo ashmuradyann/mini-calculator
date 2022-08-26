@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/mini-calculator/static/css/main.ecfe1cc6.css",
-    "main.js": "/mini-calculator/static/js/main.c3e57285.js",
+    "main.css": "/mini-calculator/static/css/main.b1dbc24d.css",
+    "main.js": "/mini-calculator/static/js/main.ad8692d1.js",
     "static/media/image4.jpg": "/mini-calculator/static/media/image4.5bf2ecece2801fc9f91f.jpg",
     "static/media/image3.jpg": "/mini-calculator/static/media/image3.85f40ab9f1560354e886.jpg",
     "static/media/image2.jpg": "/mini-calculator/static/media/image2.1ea1d4791e73c5e851b7.jpg",
     "static/media/image1.jpg": "/mini-calculator/static/media/image1.6608acb84a4f622ac658.jpg",
     "index.html": "/mini-calculator/index.html",
-    "main.ecfe1cc6.css.map": "/mini-calculator/static/css/main.ecfe1cc6.css.map",
-    "main.c3e57285.js.map": "/mini-calculator/static/js/main.c3e57285.js.map"
+    "main.b1dbc24d.css.map": "/mini-calculator/static/css/main.b1dbc24d.css.map",
+    "main.ad8692d1.js.map": "/mini-calculator/static/js/main.ad8692d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecfe1cc6.css",
-    "static/js/main.c3e57285.js"
+    "static/css/main.b1dbc24d.css",
+    "static/js/main.ad8692d1.js"
   ]
 }
