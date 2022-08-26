@@ -1,0 +1,142 @@
+.calculator {
+    width: 60%;
+    height: fit-content;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .slider-wrapper {
+        margin: 20px 0;
+        color: #7c7c7c;
+
+        .number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #000;
+            margin-top: -5px;
+            margin-bottom: -10px;
+        }
+        
+        input[type="text"] {
+            outline: none;
+            font-size: 2rem;
+            font-weight: bold;
+            color: rgb(90, 90, 90);
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 3px solid #fff;
+            transition: .2s;
+            width: 145px;
+        }
+
+        input[type="text"]:focus {
+            border-bottom: 3px solid #672aa0;
+        }
+
+        .delete {
+            width: fit-content;
+            font-size: .9rem;
+            font-weight: 500;
+            margin-top: 2px;
+            cursor: pointer;
+        }
+
+        .delete:hover {
+            color: #000;
+        }
+
+        h4 {
+            font-weight: 500;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+
+            p {
+                font-size: 1rem;
+                font-weight: 500;
+                margin-right: 15px;
+                
+                &.rub {
+                    color: rgb(90, 90, 90);
+                    font-size: 2rem;
+                    margin-left: 5px;
+                    border-bottom: 3px solid #fff;
+                    margin-bottom: .8%;
+                }
+            }
+        }
+
+        .button {
+            width: 60%;
+            height: 50px;
+            border-radius: 15px;
+            background-color: #672aa0;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            position: absolute;
+            top: 99%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: .2s;
+        }
+
+        .button:hover {
+            top: 96%;
+        }
+    }
+
+    .contacts {
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0 25px hsla(0, 0%, 0%, 0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 40px 30px 40px;
+        margin: 2% 0;
+        position: relative;
+        opacity: 1;
+        transform: translateY(0%);
+        animation-name: fade;
+        animation-duration: 1s;
+
+        .button {
+            width: 45%;
+            height: 50px;
+            border-radius: 15px;
+            background-color: #672aa0;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            position: absolute;
+            top: 99%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: .2s;
+        }
+
+        .button:hover {
+            top: 96%;
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .calculator {
+        width: 90%;
+        margin-bottom: 30px;
+    
+        .slider-wrapper {
+            margin: 20px 0;
+        }
+    }
+}

@@ -1,0 +1,126 @@
+.calculator {
+  width: 60%;
+  height: fit-content;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.calculator .slider-wrapper {
+  margin: 20px 0;
+  color: #7c7c7c;
+}
+.calculator .slider-wrapper .number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  margin-top: -5px;
+  margin-bottom: -10px;
+}
+.calculator .slider-wrapper input[type=text] {
+  outline: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #5a5a5a;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid #fff;
+  transition: 0.2s;
+  width: 145px;
+}
+.calculator .slider-wrapper input[type=text]:focus {
+  border-bottom: 3px solid #672aa0;
+}
+.calculator .slider-wrapper .delete {
+  width: fit-content;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 2px;
+  cursor: pointer;
+}
+.calculator .slider-wrapper .delete:hover {
+  color: #000;
+}
+.calculator .slider-wrapper h4 {
+  font-weight: 500;
+}
+.calculator .slider-wrapper div {
+  display: flex;
+  align-items: center;
+}
+.calculator .slider-wrapper div p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right: 15px;
+}
+.calculator .slider-wrapper div p.rub {
+  color: #5a5a5a;
+  font-size: 2rem;
+  margin-left: 5px;
+  border-bottom: 3px solid #fff;
+  margin-bottom: 0.8%;
+}
+.calculator .slider-wrapper .button {
+  width: 60%;
+  height: 50px;
+  border-radius: 15px;
+  background-color: #672aa0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 99%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+}
+.calculator .slider-wrapper .button:hover {
+  top: 96%;
+}
+.calculator .contacts {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 40px 30px 40px;
+  margin: 2% 0;
+  position: relative;
+  opacity: 1;
+  transform: translateY(0%);
+  animation-name: fade;
+  animation-duration: 1s;
+}
+.calculator .contacts .button {
+  width: 45%;
+  height: 50px;
+  border-radius: 15px;
+  background-color: #672aa0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 99%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+}
+.calculator .contacts .button:hover {
+  top: 96%;
+}
+
+@media (max-width: 880px) {
+  .calculator {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .calculator .slider-wrapper {
+    margin: 20px 0;
+  }
+}
