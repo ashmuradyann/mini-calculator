@@ -20,8 +20,6 @@
             opacity: 1;
             animation-name: fade;
             animation-duration: .7s;
-            // position: relative;
-            // animation: 3s ease 0s normal forwards 1 fade;
         }
 
         div {
@@ -32,6 +30,7 @@
             color: rgb(90, 90, 90);
             
             .input-count {
+                width: 7.5rem;
                 outline: none;
                 font-size: 2rem;
                 font-weight: bold;
@@ -41,7 +40,6 @@
                 border-right: none;
                 border-bottom: 3px solid #fff;
                 transition: .2s;
-                width: 7.2rem;
                 margin-top: 5px;
             }
             

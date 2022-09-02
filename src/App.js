@@ -8,6 +8,7 @@ import image1 from './assets/image1.jpg'
 import image2 from './assets/image2.jpg'
 import image3 from './assets/image3.jpg'
 import image4 from './assets/image4.jpg'
+import image5 from './assets/image5.jpg'
 
 import './app.scss'
 
@@ -41,15 +42,16 @@ const App = () => {
   }
 
   useEffect(() => {
-    if (data.value > 50000) {
-      setData({ ...data, value: 50000 })
+    if (data.value > 190000) {
+      setData({ ...data, value: 190000 })
     }
   }, [data.value])
 
   const handleChange = (e) => {
     let value = e.target.value.replaceAll(" ", "")
+    if (value.startsWith("0") && value > 0) value = value.replace("0", "")
 
-    if (value.length <= 5) {
+    if (value.length <= 6) {
       if (value >= 0 && value <= 8000) {
         setData({
           image: image1,
@@ -74,11 +76,19 @@ const App = () => {
           lowest: Math.round((value - 8000) / 23.84),
           highest: Math.round((value - 8000) / 59.6)
         })
-      } else if (value > 25000) {
+      } else if (value > 25000 && value < 190000) {
         setData({
           image: image4,
           value: value,
           text: "Давайте обсудим",
+          lowest: Math.round((value - 8000 + (value - value * 4 / 100)) / 23.84),
+          highest: Math.round((value - 8000 + (value - value * 4 / 100)) / 59.6)
+        })
+      } else if (value >= 190000) {
+        setData({
+          image: image5,
+          value: value,
+          text: "Отличный бюджет! Как насчет официальной рекламы Telegram?",
           lowest: Math.round((value - 8000 + (value - value * 4 / 100)) / 23.84),
           highest: Math.round((value - 8000 + (value - value * 4 / 100)) / 59.6)
         })

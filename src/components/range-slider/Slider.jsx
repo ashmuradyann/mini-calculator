@@ -8,7 +8,7 @@ const Slider = styled.input.attrs({ type: 'range' })`
   border-radius: 5px;
   user-select: none;
   background: ${(props) =>
-    `linear-gradient(to right, #682e9d 0 ${props.value / props.max * 100 - props.min / props.max * (props.value > 220000 ? 37 : 63)}%, #c4c3c3 ${props.value / props.max * 100 - props.min / props.max * (props.value > 220000 ? 37 : 63)}% 100%)`};
+    `linear-gradient(to right, #682e9d 0 ${props.value / props.max * 100 - props.min / props.max * (props.value > 170000 ? 37 : 63)}%, #c4c3c3 ${props.value / props.max * 100 - props.min / props.max * (props.value > 170000 ? 37 : 63)}% 100%)`};
 
   ::-webkit-slider-thumb {
     -webkit-appearance: none;
